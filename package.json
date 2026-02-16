@@ -8,8 +8,8 @@
     "lint:fix": "eslint *.js **/*.js --ignore-pattern eslint.config.js --fix"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "@eslint/js": "^8.57.0"
+    "@eslint/js": "^8.57.0",
+    "eslint": "^8.57.1"
   },
   "keywords": [
     "software-testing",
