@@ -3,7 +3,7 @@ Como seria mi input y mi output, cual me conviene usar mas aquí o aca en cada t
 MIS CASOS DE PRUEBAS
 1. Function that checks if a given number is positive, negative, or zero.
 
-	INPUT: un numero entero int 
+	INPUT: un numero entero int
 	OUTPUT: un mensaje string
 	CASO 	INPUT 	OUTPUT		PARTICION
 	1		0		zero		neutro
@@ -16,12 +16,12 @@ The password must be at least 8 characters long.
 The password must contain at least one uppercase letter,
 one lowercase letter, one digit,
 and one special character (!, @, #, $, %, or &).
-	
+
 	EL MINIMO SON 11
 	INPUT: cadena dde texto string
 	OUTPUT: booleano true/flase o mensaje de error
 	CASO 	INPUT 			OUTPUT		ANALISIS
-	1		Robocopp		false		no tiene numeros 
+	1		Robocopp		false		no tiene numeros
 	2		robocop1!		false		no tiene mayusculas
 	3		Robocop0		false		no tiene caracteres especiales
 	4		Ro0#			false		longitud menor a 8
@@ -42,8 +42,8 @@ If the total amount is less than 100, no discount is applied.
 If the total amount is between 100 and 500 (inclusive), a 10% discount is applied.
 If the total amount is greater than 500, a 20% discount is applied.
 
-	EN EL 3 ME CONVIENE PROBAR CON LIMMITES	
-	
+	EN EL 3 ME CONVIENE PROBAR CON LIMMITES
+
 	INPUT: monto total (float)
 	OUTPUT: el monto del descuento calculado (float) o precio final
 	CASO 	INPUT 		OUTPUT			LIMITES
