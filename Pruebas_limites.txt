@@ -1,0 +1,97 @@
+LOS CASOS POR NUMEROS SON POR PARTICIONES NO POR LIMITES
+Como seria mi input y mi output, cual me conviene usar mas aquí o aca en cada tipos de pruebas
+MIS CASOS DE PRUEBAS
+1. Function that checks if a given number is positive, negative, or zero.
+
+	INPUT: un numero entero int 
+	OUTPUT: un mensaje string
+	CASO 	INPUT 	OUTPUT		PARTICION
+	1		0		zero		neutro
+	2		-1		negative	numeros <0
+	3		5		positive	numeros >0
+
+2. Function that validates user passwords.
+The password validation rules are as follows:
+The password must be at least 8 characters long.
+The password must contain at least one uppercase letter,
+one lowercase letter, one digit,
+and one special character (!, @, #, $, %, or &).
+	
+	EL MINIMO SON 11
+	INPUT: cadena dde texto string
+	OUTPUT: booleano true/flase o mensaje de error
+	CASO 	INPUT 			OUTPUT		ANALISIS
+	1		Robocopp		false		no tiene numeros 
+	2		robocop1!		false		no tiene mayusculas
+	3		Robocop0		false		no tiene caracteres especiales
+	4		Ro0#			false		longitud menor a 8
+	5									longitud mayor a 8
+	6									no tiene minusculas
+	7									con caracter !
+	8									con caracter @
+	9									con caracter #
+	10									con carecter $
+	11									con caracter %
+	12									con caracter &
+	13		Robocop347@		true		cumple todas las reglas
+
+3. Function that calculates the discount for a customer's purchase based on the total amount.
+The discount rules are as follows:
+
+If the total amount is less than 100, no discount is applied.
+If the total amount is between 100 and 500 (inclusive), a 10% discount is applied.
+If the total amount is greater than 500, a 20% discount is applied.
+
+	EN EL 3 ME CONVIENE PROBAR CON LIMMITES	
+	
+	INPUT: monto total (float)
+	OUTPUT: el monto del descuento calculado (float) o precio final
+	CASO 	INPUT 		OUTPUT			LIMITES
+	1		99			$0(0%)			limite inferior
+	2		100			$10(10%)		limite exacto
+	3		500			$50(10%)		limite exacto
+	4		501			$100.2(%20)		limite superior
+
+4. Function that processes user orders in an e-commerce system.
+The function calculates the total price of the items in the order,
+applying different discounts based on the quantity of each item.
+The discount rules are as follows:
+
+If the quantity of a single item is between 1 and 5 (inclusive), no discount is applied.
+If the quantity of a single item is between 6 and 10 (inclusive), a 5% discount is applied.
+If the quantity of a single item is greater than 10, a 10% discount is applied.
+
+	ESPERIA 3  o 4 con casos con mas items
+	INPUT: cantidad de iteems (int)
+	OUTPUT: procentaje de descuento o total calculado
+	CASO 	INPUT 	OUTPUT		  		PARTICIONES
+	1		3		0% de descuento		rango de 1 a 5
+	2		8		5% de descuento		rango de 6 a 10
+	3		15		10% de descuento	rango > 10
+
+5. Function that calculates shipping costs for an online shopping system.
+The function calculates shipping costs based on the total weight of the items
+in the order and the shipping method chosen by the customer.
+The shipping cost rules are as follows:
+
+For standard shipping:
+
+If the total weight is less than or equal to 5 kg, the cost is $10.
+If the total weight is between 5 and 10 kg (inclusive), the cost is $15.
+If the total weight is greater than 10 kg, the cost is $20.
+For express shipping:
+
+If the total weight is less than or equal to 5 kg, the cost is $20.
+If the total weight is between 5 and 10 kg (inclusive), the cost is $30.
+If the total weight is greater than 10 kg, the cost is $40.
+
+	PARTICIONES
+	INPUT: peso(float) y metodo(string)
+	OUTPUT: costo de envio (int)
+	CASO 	INPUT 1 INPUT 2		  	OUTPUT
+	1		3		standard		$10
+	2		7		standard		$15
+	3		12		standard		$20
+	4		3		express			$20
+	5		7		express			$30
+	6		12		express			$40
